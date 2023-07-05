@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        
+        <form action="php17.php" method="post">
+            <input type="text" name="name">
+            <input type="submit">
+
+        </form>
+        <?php
+            $name=$_POST["name"];
+            $letter = substr($name, -1);
+            if ($letter=="a")
+            {
+                echo "You are Woman";
+            }
+            else
+            {
+                echo "You are Man";
+            }
+            //echo max(3, 6)
+        ?>
+        
+
+        
+    </body>
+</html>
